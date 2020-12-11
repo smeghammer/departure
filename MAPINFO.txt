@@ -1,0 +1,13 @@
+episode E1M1
+{
+	name="Departure"
+}
+map E1M1 "Garden of Evil"
+{
+	levelnum=1
+	sky1 = "SKY1"
+	next="E1M2"
+	secretnext="E1M9"
+	music="D_DEAD"
+	NoJump
+}
