@@ -1,4 +1,0 @@
-BeamGuy/Attack		DSBEAMAT
-BeamGuy/Hit		DSBEAMHT
-
-$limit BeamGuy/Hit 0

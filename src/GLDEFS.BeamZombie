@@ -1,185 +1,185 @@
 BrightMap Sprite ZBAMA1
 {
-Map BMZBAMA1
+Map "Brightmaps/BeamZombie/BMZBAMA1"
 DisableFullBright
 }
 
 BrightMap Sprite ZBAMA2A8
 {
-Map BMZBAMA2
+Map "Brightmaps/BeamZombie/BMZBAMA2"
 DisableFullBright
 }
 
 BrightMap Sprite ZBAMA3A7
 {
-Map BMZBAMA3
+Map "Brightmaps/BeamZombie/BMZBAMA3"
 DisableFullBright
 }
 
 BrightMap Sprite ZBAMA4A6
 {
-Map BMZBAMA4
+Map "Brightmaps/BeamZombie/BMZBAMA4"
 DisableFullBright
 }
 
 BrightMap Sprite ZBAMA5
 {
-Map BMZBAMA5
+Map "Brightmaps/BeamZombie/BMZBAMA5"
 DisableFullBright
 }
 
 BrightMap Sprite ZBAMB1
 {
-Map BMZBAMB1
+Map "Brightmaps/BeamZombie/BMZBAMB1"
 DisableFullBright
 }
 
 BrightMap Sprite ZBAMB2B8
 {
-Map BMZBAMB2
+Map "Brightmaps/BeamZombie/BMZBAMB2"
 DisableFullBright
 }
 
 BrightMap Sprite ZBAMB3B7
 {
-Map BMZBAMB3
+Map "Brightmaps/BeamZombie/BMZBAMB3"
 DisableFullBright
 }
 
 BrightMap Sprite ZBAMB4B6
 {
-Map BMZBAMB4
+Map "Brightmaps/BeamZombie/BMZBAMB4"
 DisableFullBright
 }
 
 BrightMap Sprite ZBAMB5
 {
-Map BMZBAMB5
+Map "Brightmaps/BeamZombie/BMZBAMB5"
 DisableFullBright
 }
 
 BrightMap Sprite ZBAMC1
 {
-Map BMZBAMC1
+Map "Brightmaps/BeamZombie/BMZBAMC1"
 DisableFullBright
 }
 
 BrightMap Sprite ZBAMC2C8
 {
-Map BMZBAMC2
+Map "Brightmaps/BeamZombie/BMZBAMC2"
 DisableFullBright
 }
 
 BrightMap Sprite ZBAMC3C7
 {
-Map BMZBAMC3
+Map "Brightmaps/BeamZombie/BMZBAMC3"
 DisableFullBright
 }
 
 BrightMap Sprite ZBAMC4C6
 {
-Map BMZBAMC4
+Map "Brightmaps/BeamZombie/BMZBAMC4"
 DisableFullBright
 }
 
 BrightMap Sprite ZBAMD1
 {
-Map BMZBAMD1
+Map "Brightmaps/BeamZombie/BMZBAMD1"
 DisableFullBright
 }
 
 BrightMap Sprite ZBAMD2D8
 {
-Map BMZBAMD2
+Map "Brightmaps/BeamZombie/BMZBAMD2"
 DisableFullBright
 }
 
 BrightMap Sprite ZBAMD3D7
 {
-Map BMZBAMD3
+Map "Brightmaps/BeamZombie/BMZBAMD3"
 DisableFullBright
 }
 
 BrightMap Sprite ZBAMD4D6
 {
-Map BMZBAMD4
+Map "Brightmaps/BeamZombie/BMZBAMD4"
 DisableFullBright
 }
 
 BrightMap Sprite ZBAME1
 {
-Map BMZBAME1
+Map "Brightmaps/BeamZombie/BMZBAME1"
 DisableFullBright
 }
 
 BrightMap Sprite ZBAME2E8
 {
-Map BMZBAME2
+Map "Brightmaps/BeamZombie/BMZBAME2"
 DisableFullBright
 }
 
 BrightMap Sprite ZBAME3E7
 {
-Map BMZBAME3
+Map "Brightmaps/BeamZombie/BMZBAME3"
 DisableFullBright
 }
 
 BrightMap Sprite ZBAMF1
 {
-Map BMZBAMF1
+Map "Brightmaps/BeamZombie/BMZBAMF1"
 DisableFullBright
 }
 
 BrightMap Sprite ZBAMF2F8
 {
-Map BMZBAMF2
+Map "Brightmaps/BeamZombie/BMZBAMF2"
 DisableFullBright
 }
 
 BrightMap Sprite ZBAMF3F7
 {
-Map BMZBAMF3
+Map "Brightmaps/BeamZombie/BMZBAMF3"
 DisableFullBright
 }
 
 BrightMap Sprite ZBAMF4F6
 {
-Map BMZBAMF4
+Map "Brightmaps/BeamZombie/BMZBAMF4"
 DisableFullBright
 }
 
 BrightMap Sprite ZBAMF5
 {
-Map BMBLACK
+Map "Brightmaps/BeamZombie/BMBLACK"
 DisableFullBright
 }
 
 BrightMap Sprite ZBAMG1
 {
-Map BMZBAMG1
+Map "Brightmaps/BeamZombie/BMZBAMG1"
 DisableFullBright
 }
 
 BrightMap Sprite ZBAMG2G8
 {
-Map BMZBAMG2
+Map "Brightmaps/BeamZombie/BMZBAMG2"
 DisableFullBright
 }
 
 BrightMap Sprite ZBAMG3G7
 {
-Map BMZBAMG3
+Map "Brightmaps/BeamZombie/BMZBAMG3"
 DisableFullBright
 }
 
 BrightMap Sprite ZBAMG4G6
 {
-Map BMZBAMG4
+Map "Brightmaps/BeamZombie/BMZBAMG4"
 DisableFullBright
 }
 
 BrightMap Sprite ZBAMH0
 {
-Map BMZBAMH0
+Map "Brightmaps/BeamZombie/BMZBAMH0"
 DisableFullBright
 }
