@@ -1,2 +1,3 @@
 #include "Actors/BeamZombie/DECORATE"
 #include "Actors/CyberImp/DECORATE"
+#include "Actors/FlamerZombie/DECORATE"

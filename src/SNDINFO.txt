@@ -1,6 +1,6 @@
 //BeamZombie
-BeamGuy/Attack		Sounds/BeamZombie/DSBEAMAT
-BeamGuy/Hit		Sounds/BeamZombie/DSBEAMHT
+BeamGuy/Attack					Sounds/BeamZombie/DSBEAMAT
+BeamGuy/Hit						Sounds/BeamZombie/DSBEAMHT
 
 $limit BeamGuy/Hit 0
 
@@ -13,3 +13,9 @@ CIMPDTH1	Sounds/CyberImp/CIMPDTH1
 CIMPDTH2	Sounds/CyberImp/CIMPDTH2
 CIMPPAIN	Sounds/CyberImp/CIMPPAIN
 CIMPACT		Sounds/CyberImp/CIMPACT
+
+//FlamerZombie
+weapons/scorch                Sounds/FlamerZombie/dsscorch
+weapons/onfire                Sounds/FlamerZombie/dsonfire
+weapons/flamer                Sounds/FlamerZombie/dsflamer
+
