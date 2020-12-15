@@ -1,13 +1,23 @@
 episode E1M1
 {
-	name="Departure"
+	name="Phobos: Threshold"
 }
 map E1M1 "Garden of Evil"
 {
-	levelnum=0
+	levelnum=1
 	sky1 = "SKY1"
 	next="E1M2"
 	secretnext="E1M9"
 	music="D_E1M1"
+	NoJump
+}
+
+map E1M2 "Foundry Encroachment"
+{
+	levelnum=2
+	sky1 = "SKY1"
+	next="E1M3"
+	secretnext="E1M9"
+	music="D_E1M2"
 	NoJump
 }
