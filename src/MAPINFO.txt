@@ -12,7 +12,7 @@ map E1M1 "Garden of Evil"
 	NoJump
 }
 
-map E1M2 "Foundry Encroachment"
+map E1M2 "Blast Furnace"
 {
 	levelnum=2
 	sky1 = "SKY1"
