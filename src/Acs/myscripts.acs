@@ -1,0 +1,19 @@
+#library "myscripts.acs"
+#include "zcommon.acs"
+
+/*
+NOTE: line special an ACS args are in different order!
+https://forum.zdoom.org/viewtopic.php?t=634
+*/
+script 1 (void)
+{
+	scroll_floor(1,-48,0,2);
+	scroll_floor(3,-48,0,2);
+	scroll_floor(4,-48,0,2);
+	scroll_floor(5,-48,0,2); 
+	Floor_LowerByValue(3,64,64);	//big crates
+	Floor_LowerByValue(5,64,32);	//small crate
+	Door_Open(4,32,0);				//Door
+	ChangeFloor(3, "STEP1");
+	ChangeFloor(5, "STEP1");
+}

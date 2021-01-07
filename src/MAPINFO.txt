@@ -21,3 +21,13 @@ map E1M2 "Blast Furnace"
 	music="D_E1M2"
 	NoJump
 }
+
+map E1M3 "fish!"
+{
+	levelnum=3
+	sky1 = "SKY1"
+	next="E1M4"
+	secretnext="E1M9"
+	music="D_E1M3"
+	NoJump
+}

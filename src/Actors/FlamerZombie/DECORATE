@@ -94,7 +94,7 @@ ACTOR ZombieFire
 {
    Radius 2
    Height 4
-   Speed 8		//16
+   Speed 12		//16
    Damage 1
    PROJECTILE
    RENDERSTYLE ADD
