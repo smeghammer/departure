@@ -1,0 +1,11 @@
+TODO:
+
+switches:
+
+Lift action:
+Need to apply to plat and crates, and change the floor
+------------
+line special 36
+13, 8, 31
+xx, 8, 31
+
