@@ -19,3 +19,17 @@ weapons/scorch                Sounds/FlamerZombie/dsscorch
 weapons/onfire                Sounds/FlamerZombie/dsonfire
 weapons/flamer                Sounds/FlamerZombie/dsflamer
 
+//UACBot
+uacbsee  uacbsee
+uacbact  uacbact
+uacbdth  dsbarexp
+grenpop  grenpop
+grenfire grenfire
+gren     gren
+grenbnce grenbnce
+
+//SmallRat
+RatSpawn/Sight RATSPAWN
+RatHit/Pain RATHIT
+RatAttack/Attack RATATTAC
+RatDead/Dead RATDEAD

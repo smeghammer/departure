@@ -1,3 +1,6 @@
 #include "Actors/BeamZombie/DECORATE"
 #include "Actors/CyberImp/DECORATE"
 #include "Actors/FlamerZombie/DECORATE"
+#include "Actors/UACBot/DECORATE"
+#include "Actors/SmallRat/DECORATE.txt"
+

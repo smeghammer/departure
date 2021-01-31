@@ -1,10 +1,13 @@
 #library "myscripts.acs"
 #include "zcommon.acs"
 
-int loaded = 0;
+int lift_lowered = 0;
 int on_dock = 0;
+int loaded = 0;
 
 /*
+SCRIPT 1:
+---------
 Start the conveyor and simulate the crates moving to lift:
  - animate the floor
  - lower the floor of the crates
@@ -27,6 +30,8 @@ script 1 (void)
 
 
 /* 
+SCRIPT 2
+--------
 Lower the lift to ground floor:
 Note - because I need to drop the crates into the floor as above (next script),
 I can't use the lower floor line special directly on the switch.
@@ -36,9 +41,12 @@ script 2 (void){
 	Floor_LowerByValueTimes8(13,8,31);
 	Floor_LowerByValueTimes8(49,8,31);
 	Floor_LowerByValueTimes8(50,8,31);
+	lift_lowered = 1;
 }
 
 /*
+SCRIPT 3:
+---------
 Move creates to crane:
  - Animate the second conveyor
  - drop crates into floor
@@ -47,28 +55,38 @@ Move creates to crane:
  - set their floors to cratop
 */
 script 3 (void){
-	/* hide crates on lift: */
-	Floor_LowerByValue(49,64,64);
-	Floor_LowerByValue(50,64,32);
-	ChangeFloor(49, "FLAT23");
-	ChangeFloor(50, "FLAT23");
+	if(lift_lowered == 1){
+		if(on_dock == 0){
+			/* hide crates on lift: */
+			Floor_LowerByValue(49,64,64);
+			Floor_LowerByValue(50,64,32);
+			ChangeFloor(49, "FLAT23");
+			ChangeFloor(50, "FLAT23");
 
-	/* start the conveyor 6,7,8, 48 */
-	scroll_floor(6,0,48,2);
-	scroll_floor(7,0,48,2);
-	scroll_floor(8,0,48,2);
-	scroll_floor(48,0,48,2);
+			/* start the conveyor 6,7,8, 48 */
+			scroll_floor(6,0,48,2);
+			scroll_floor(7,0,48,2);
+			scroll_floor(8,0,48,2);
+			scroll_floor(48,0,48,2);
 
-	/* raise crates on platform at end of pier (53, 54,55)*/
-	FloorAndCeiling_RaiseByValue(56,64,128);
+			/* raise crates on platform at end of pier (53, 54,55)*/
+			FloorAndCeiling_RaiseByValue(56,64,128);
 
-	/* set on_dock flag to true */
-	on_dock = 1;
+			/* set on_dock flag to true */
+			on_dock = 1;
+		}
+		else{
+			print(s:"On dock already.");
+		}
+	}
+	else{
+		print(s:"You need to lower the platform");
+	}
 }
 
 /*
 Move crates to ship:
-Do this form first control room, so we have to go back?
+Do this from first control room, so we have to go back?
  - drop pier crates into floor
  - reset flats
  - raise crates on ship
@@ -77,15 +95,45 @@ Do this form first control room, so we have to go back?
 */
 script 4 (void){
 	if(on_dock == 1){
-		/* 
-		load the crates onto the ship, including the one on the crane
-		This needs to be done out of sight 'cos it's all smoke and mirrors...		
-		*/
+		if(loaded != 1){
+			print(s:"loading crates onto boat...");
+			/* load the crates onto the ship, including the one on the crane
+			This needs to be done out of sight 'cos it's all smoke and mirrors... */
+
+			/* hide the crates on platform at end of pier again */
+			FloorAndCeiling_LowerByValue(56,64,128);
+
+			/* lower the control sector for the crane crate out of sight (62, 63)*/
+			FloorAndCeiling_LowerByValue(62,64,192);
+			FloorAndCeiling_LowerByValue(63,64,192);
+
+			/* raise crates on ship to represent the ones being loaded from
+			the conveyor and the crane */
+			Floor_RaiseByValue(58,64,64);
+			Floor_RaiseByValue(59,64,96);
+			Floor_RaiseByValue(60,64,64);
+			Floor_RaiseByValue(61,64,64);
+			ChangeFloor(58, "CRATOP2");
+			ChangeFloor(59, "CRATOP1");
+			ChangeFloor(60, "CRATOP1");
+			ChangeFloor(61, "CRATOP2");
+
+			/* and set the exit flag to true: */
+			loaded = 1;
+		}
+		else{
+			print(s:"All loaded OK");
+		}
 	}
 	/* otherwise do nothing */
+	else{
+		print(s:"Nothing to load yet...");	
+	}
 }
 
-
+/*
+Exit the level, or just alert the player to finish loading:
+*/
 script 5 (void){
 	if(loaded == 1){
 		print(s:"Leaving dock");
