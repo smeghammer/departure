@@ -3,4 +3,5 @@
 #include "Actors/FlamerZombie/DECORATE"
 #include "Actors/UACBot/DECORATE"
 #include "Actors/SmallRat/DECORATE.txt"
+#include "Actors/RailArachno/DECORATE"
 

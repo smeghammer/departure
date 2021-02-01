@@ -33,3 +33,6 @@ RatSpawn/Sight RATSPAWN
 RatHit/Pain RATHIT
 RatAttack/Attack RATATTAC
 RatDead/Dead RATDEAD
+
+//RailArachno
+baby/chargerailgun	DSRGCHRG

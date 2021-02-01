@@ -1,3 +1,5 @@
 //Enemies
 #include gldefs/FlamerZombie.txt
 #include gldefs/BeamZombie.txt
+#include gldefs/RailArachno.txt
+

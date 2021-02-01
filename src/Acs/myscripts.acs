@@ -67,7 +67,7 @@ script 3 (void){
 			scroll_floor(6,0,48,2);
 			scroll_floor(7,0,48,2);
 			scroll_floor(8,0,48,2);
-			scroll_floor(48,0,48,2);
+			scroll_floor(48,0,48,2);3
 
 			/* raise crates on platform at end of pier (53, 54,55)*/
 			FloorAndCeiling_RaiseByValue(56,64,128);
