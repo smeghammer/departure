@@ -31,6 +31,7 @@ script 1 (void)
 	Door_Open(4,32,0);				//Door
 	ChangeFloor(3, "STEP1");
 	ChangeFloor(5, "STEP1");
+	Floor_LowerByValue(68, 8, 64);
 }
 
 
