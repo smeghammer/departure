@@ -6,6 +6,9 @@ int doors_open = 0;
 int on_dock = 0;
 int loaded = 0;
 
+script 10 ENTER {
+	Sector_SetCeilingPanning(66, 0, 0, 16, 0);
+}
 
 /*
 SCRIPT 1:

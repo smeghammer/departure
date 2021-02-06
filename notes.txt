@@ -9,3 +9,4 @@ line special 36
 13, 8, 31
 xx, 8, 31
 
+Make big gallery thing in 3 exit room , reachable via secret passage in the first room.
