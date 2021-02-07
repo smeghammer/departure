@@ -8,6 +8,10 @@ int loaded = 0;
 
 script 10 ENTER {
 	Sector_SetCeilingPanning(66, 0, 0, 16, 0);
+	
+	/* compstations in secret gallery */
+	Sector_SetFloorPanning(69, 0, 0, -16, 0);
+	Sector_SetFloorPanning(70, 32, 0, 0, 0);
 }
 
 /*
