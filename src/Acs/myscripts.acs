@@ -170,4 +170,11 @@ script 5 (void){
 	}
 }
 
+/* 
+Open bars in balcony secret
+*/
+script 7 (void){
+	Floor_LowerByValue(73,8,28);
+	Ceiling_RaiseByValue(73,8,28);
+}
 
