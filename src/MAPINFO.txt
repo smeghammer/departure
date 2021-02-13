@@ -22,7 +22,7 @@ map E1M2 "Blast Furnace"
 	NoJump
 }
 
-map E1M3 "fish!"
+map E1M3 "Loading Dock"
 {
 	levelnum=3
 	sky1 = "SKY1"

@@ -1,3 +1,7 @@
+//General
+BUZZER							BUZZER
+CONVEYOR						CONVEYOR
+
 //BeamZombie
 BeamGuy/Attack					Sounds/BeamZombie/DSBEAMAT
 BeamGuy/Hit						Sounds/BeamZombie/DSBEAMHT

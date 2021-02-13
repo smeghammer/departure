@@ -6,6 +6,16 @@ int doors_open = 0;
 int on_dock = 0;
 int loaded = 0;
 
+function void conveyorSounds(int buzzerTID, int conveyorTID){
+	log(s:"playing buzzer:");
+	PlaySound(buzzerTID, "BUZZER", CHAN_AUTO, 1.0,false);
+	if(conveyorTID){
+		log(s:"playing conveyor:");
+		PlaySound(conveyorTID, "CONVEYOR", CHAN_AUTO, 0.5, true, ATTN_STATIC); 
+	}
+}
+
+
 script 10 ENTER {
 	Sector_SetCeilingPanning(66, 0, 0, 16, 0);
 	
@@ -25,7 +35,8 @@ Start the conveyor and simulate the crates moving to lift:
 https://forum.zdoom.org/viewtopic.php?t=634)
 */
 script 1 (void)
-{
+{	
+	
 	scroll_floor(1,-48,0,2);
 	scroll_floor(3,-48,0,2);
 	scroll_floor(4,-48,0,2);
@@ -36,6 +47,7 @@ script 1 (void)
 	ChangeFloor(3, "STEP1");
 	ChangeFloor(5, "STEP1");
 	Floor_LowerByValue(68, 8, 64);
+	conveyorSounds(3, 4);
 }
 
 
@@ -51,6 +63,8 @@ script 2 (void){
 	Floor_LowerByValueTimes8(13,8,31);
 	Floor_LowerByValueTimes8(49,8,31);
 	Floor_LowerByValueTimes8(50,8,31);
+	conveyorSounds(5, FALSE);
+// 	PlaySound(5, "BUZZER", CHAN_AUTO);
 	lift_lowered = 1;
 }
 
@@ -94,6 +108,11 @@ script 3 (void){
 
 				/* raise crates on platform at end of pier (53, 54,55)*/
 				FloorAndCeiling_RaiseByValue(56,64,128);
+				
+				/* play warning buzzer */
+// 				PlaySound(6, "BUZZER", CHAN_AUTO);
+// 				PlaySound(7, "CONVEYOR", CHAN_AUTO, 1, true, ATTN_NORM);
+				conveyorSounds(6, 7);
 
 				/* set on_dock flag to true */
 				on_dock = 1;
