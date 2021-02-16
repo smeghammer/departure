@@ -9,6 +9,7 @@ int loaded = 0;
 function void conveyorSounds(int buzzerTID, int conveyorTID){
 	log(s:"playing buzzer:");
 	PlaySound(buzzerTID, "BUZZER", CHAN_AUTO, 1.0,false);
+	PlaySound(buzzerTID, "BUZZER", CHAN_AUTO, 0.0,false);	//because Delay() doesn't work in functions
 	if(conveyorTID){
 		log(s:"playing conveyor:");
 		PlaySound(conveyorTID, "CONVEYOR", CHAN_AUTO, 0.5, true, ATTN_STATIC); 

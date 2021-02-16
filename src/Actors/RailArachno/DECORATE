@@ -1,7 +1,7 @@
 ACTOR RailArachnotron 3125
 {
 	//$Category "ZDoom Monster pack"
-	Health 500
+	Health 750
 	Radius 60
 	Height 64
 	Mass 600
