@@ -16,90 +16,90 @@ Frame DPOSF { Light DoubleChaingunGuy }
 
 BrightMap Sprite DPOSE1
 {
-    Map BMDPOSE1
+    Map "Brightmaps/DoubleChaingunner/BMDPOSE1.png"
     DisableFullBright
 }
 
 BrightMap Sprite DPOSE2
 {
-    Map BMDPOSE2
+    Map "Brightmaps/DoubleChaingunner/BMDPOSE2.png"
     DisableFullBright
 }
 
 BrightMap Sprite DPOSE3
 {
-    Map BMDPOSE3
+    Map "Brightmaps/DoubleChaingunner/BMDPOSE3.png"
     DisableFullBright
 }
 
 BrightMap Sprite DPOSE4
 {
-    Map BMDPOSE4
+    Map "Brightmaps/DoubleChaingunner/BMDPOSE4.png"
     DisableFullBright
 }
 
 BrightMap Sprite DPOSE6
 {
-    Map BMDPOSE6
+    Map "Brightmaps/DoubleChaingunner/BMDPOSE6.png"
     DisableFullBright
 }
 
 BrightMap Sprite DPOSE7
 {
-    Map BMDPOSE7
+    Map "Brightmaps/DoubleChaingunner/BMDPOSE7.png"
     DisableFullBright
 }
 
 BrightMap Sprite DPOSE8
 {
-    Map BMDPOSE8
+    Map "Brightmaps/DoubleChaingunner/BMDPOSE8.png"
     DisableFullBright
 }
 
 BrightMap Sprite DPOSF1
 {
-    Map BMDPOSF1
+    Map "Brightmaps/DoubleChaingunner/BMDPOSF1.png"
     DisableFullBright
 }
 
 BrightMap Sprite DPOSF2
 {
-    Map BMDPOSF2
+    Map "Brightmaps/DoubleChaingunner/BMDPOSF2.png"
     DisableFullBright
 }
 
 BrightMap Sprite DPOSF3
 {
-    Map BMDPOSF3
+    Map "Brightmaps/DoubleChaingunner/BMDPOSF3.png"
     DisableFullBright
 }
 
 BrightMap Sprite DPOSF4
 {
-    Map BMDPOSF4
+    Map "Brightmaps/DoubleChaingunner/BMDPOSF4.png"
     DisableFullBright
 }
 
 BrightMap Sprite DPOSF5
 {
-    Map BMDPOSF5
+    Map "Brightmaps/DoubleChaingunner/BMDPOSF5.png"
     DisableFullBright
 }
 
 BrightMap Sprite DPOSF6
 {
-    Map BMDPOSF6
+    Map "Brightmaps/DoubleChaingunner/BMDPOSF6.png"
     DisableFullBright
 }
 
 BrightMap Sprite DPOSF7
 {
-    Map BMDPOSF7
+    Map "Brightmaps/DoubleChaingunner/BMDPOSF7.png"
     DisableFullBright
 }
 
 BrightMap Sprite DPOSF8
 {
-    Map BMDPOSF8
+    Map "Brightmaps/DoubleChaingunner/BMDPOSF8.png"
     DisableFullBright
 }
