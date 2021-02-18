@@ -1,0 +1,105 @@
+FlickerLight2 DoubleChaingunGuy
+{
+color 1.0 0.8 0.2
+size 48
+secondarySize 56
+interval 1
+offset 0 40 0
+}
+
+Object ChaingunGuy2
+{
+Frame DPOSE { Light DoubleChaingunGuy }
+Frame DPOSF { Light DoubleChaingunGuy }
+}
+
+
+BrightMap Sprite DPOSE1
+{
+    Map BMDPOSE1
+    DisableFullBright
+}
+
+BrightMap Sprite DPOSE2
+{
+    Map BMDPOSE2
+    DisableFullBright
+}
+
+BrightMap Sprite DPOSE3
+{
+    Map BMDPOSE3
+    DisableFullBright
+}
+
+BrightMap Sprite DPOSE4
+{
+    Map BMDPOSE4
+    DisableFullBright
+}
+
+BrightMap Sprite DPOSE6
+{
+    Map BMDPOSE6
+    DisableFullBright
+}
+
+BrightMap Sprite DPOSE7
+{
+    Map BMDPOSE7
+    DisableFullBright
+}
+
+BrightMap Sprite DPOSE8
+{
+    Map BMDPOSE8
+    DisableFullBright
+}
+
+BrightMap Sprite DPOSF1
+{
+    Map BMDPOSF1
+    DisableFullBright
+}
+
+BrightMap Sprite DPOSF2
+{
+    Map BMDPOSF2
+    DisableFullBright
+}
+
+BrightMap Sprite DPOSF3
+{
+    Map BMDPOSF3
+    DisableFullBright
+}
+
+BrightMap Sprite DPOSF4
+{
+    Map BMDPOSF4
+    DisableFullBright
+}
+
+BrightMap Sprite DPOSF5
+{
+    Map BMDPOSF5
+    DisableFullBright
+}
+
+BrightMap Sprite DPOSF6
+{
+    Map BMDPOSF6
+    DisableFullBright
+}
+
+BrightMap Sprite DPOSF7
+{
+    Map BMDPOSF7
+    DisableFullBright
+}
+
+BrightMap Sprite DPOSF8
+{
+    Map BMDPOSF8
+    DisableFullBright
+}

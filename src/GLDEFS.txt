@@ -1,5 +1,7 @@
 //Enemies
 #include gldefs/FlamerZombie.txt
 #include gldefs/BeamZombie.txt
+#include gldefs/DoubleChaingunner.txt
 #include gldefs/RailArachno.txt
+#include gldefs/Exterminator.txt
 

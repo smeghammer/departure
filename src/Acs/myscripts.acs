@@ -23,6 +23,9 @@ script 10 ENTER {
 	/* compstations in secret gallery */
 	Sector_SetFloorPanning(69, 0, 0, -16, 0);
 	Sector_SetFloorPanning(70, 32, 0, 0, 0);
+	
+	/* lift floor in middle corridor */
+	Sector_SetFloorPanning(64, 0, 0, -16, 0);
 }
 
 /*

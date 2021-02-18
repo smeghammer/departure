@@ -4,4 +4,6 @@
 #include "Actors/UACBot/DECORATE"
 #include "Actors/SmallRat/DECORATE.txt"
 #include "Actors/RailArachno/DECORATE"
+#include "Actors/DoubleChaingunner/DECORATE"
+#include "Actors/Exterminator/DECORATE"
 
