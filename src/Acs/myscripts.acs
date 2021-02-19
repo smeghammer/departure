@@ -120,6 +120,12 @@ script 3 (void){
 
 				/* set on_dock flag to true */
 				on_dock = 1;
+
+				/* and also raise light level of lighthouse (tag 80) to 255 */
+				Light_Fade(80, 255, 70);
+
+				/* open monster closet at bottom */
+				Door_Open(81, 64);
 			}
 			else{
 				print(s:"On dock already.");
