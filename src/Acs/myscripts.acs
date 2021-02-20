@@ -176,6 +176,9 @@ script 4 (void){
 
 			/* and set the exit flag to true: */
 			loaded = 1;
+			
+			/* open second (LH) monster trap */
+			Floor_LowerByValue(82,64,64);
 		}
 		else{
 			print(s:"All loaded OK");
