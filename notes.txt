@@ -11,4 +11,15 @@ xx, 8, 31
 
 Make big gallery thing in 3 exit room , reachable via secret passage in the first room.
 
+e1m3 TODO:
+ - Final conveyor under door - floor needs to scroll (ACS, add sector ID)
+ - make route back (via walkway over water?) in case big secret is missed
+ - make doors consistent (64, ickdoor)
+ - check spawning of monsters into final lighthouse trap
+ - make this spawn point same as lower ones!
+ - make all default grey COMPSPAN varains tnstead
+
+Other TODO:
 make decorate boss combining hellknoght (?) and flamethrower ammo
+
+
