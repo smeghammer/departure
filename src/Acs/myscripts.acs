@@ -126,6 +126,9 @@ script 3 (void){
 
 				/* open monster closet at bottom */
 				Door_Open(81, 64);
+				
+				/* open lighthouse monster trap */
+				Floor_LowerByValue(84,64,64);
 			}
 			else{
 				print(s:"On dock already.");
