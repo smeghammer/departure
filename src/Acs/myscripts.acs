@@ -38,9 +38,9 @@ Start the conveyor and simulate the crates moving to lift:
 (NOTE: line special an ACS args are in different order!
 https://forum.zdoom.org/viewtopic.php?t=634)
 */
-script 1 (void)
-{	
-	
+script 1 (void){
+	log(s:"starting conveyor...");	
+	conveyorSounds(3, 4);
 	scroll_floor(1,-48,0,2);
 	scroll_floor(3,-48,0,2);
 	scroll_floor(4,-48,0,2);
@@ -51,9 +51,7 @@ script 1 (void)
 	ChangeFloor(3, "STEP1");
 	ChangeFloor(5, "STEP1");
 	Floor_LowerByValue(68, 8, 64);
-	conveyorSounds(3, 4);
 }
-
 
 /* 
 SCRIPT 2
@@ -64,26 +62,14 @@ I can't use the lower floor line special directly on the switch.
  */
 script 2 (void){
 	log(s:"lowering plats");
+	conveyorSounds(5, FALSE);
 	Floor_LowerByValueTimes8(13,8,31);
 	Floor_LowerByValueTimes8(49,8,31);
 	Floor_LowerByValueTimes8(50,8,31);
-	conveyorSounds(5, FALSE);
-// 	PlaySound(5, "BUZZER", CHAN_AUTO);
 	lift_lowered = 1;
 }
 
-/* SCRIPT 6:
-------------
-open main exit doors */
-script 6 (void){
-	if(doors_open == 0){
-		doors_open = 1;
-		Ceiling_RaiseByValue(65, 8, 112);
-	}
-	else{
-		print(s:"Main doors open already.");
-	}
-}
+
 
 /* SCRIPT 3:
 ------------
@@ -104,18 +90,17 @@ script 3 (void){
 				ChangeFloor(49, "FLAT23");
 				ChangeFloor(50, "FLAT23");
 
-				/* start the conveyor 6,7,8, 48 */
+				/* start the conveyor 6,7,8, 48,65 */
 				scroll_floor(6,0,48,2);
 				scroll_floor(7,0,48,2);
 				scroll_floor(8,0,48,2);
 				scroll_floor(48,0,48,2);
+				scroll_floor(65,0,48,2);
 
 				/* raise crates on platform at end of pier (53, 54,55)*/
 				FloorAndCeiling_RaiseByValue(56,64,128);
 				
 				/* play warning buzzer */
-// 				PlaySound(6, "BUZZER", CHAN_AUTO);
-// 				PlaySound(7, "CONVEYOR", CHAN_AUTO, 1, true, ATTN_NORM);
 				conveyorSounds(6, 7);
 
 				/* set on_dock flag to true */
@@ -165,9 +150,11 @@ script 4 (void){
 			/* lower the control sector for the crane crate out of sight (62, 63)*/
 			FloorAndCeiling_LowerByValue(62,64,192);
 			FloorAndCeiling_LowerByValue(63,64,192);
-
-			/* raise crates on ship to represent the ones being loaded from
-			the conveyor and the crane */
+			
+			/* open second (LH) monster trap */
+			Floor_LowerByValue(82,64,64);
+			
+			/* raise crates on ship to represent the ones being loaded from the conveyor and the crane */
 			Floor_RaiseByValue(58,64,64);
 			Floor_RaiseByValue(59,64,96);
 			Floor_RaiseByValue(60,64,64);
@@ -179,9 +166,6 @@ script 4 (void){
 
 			/* and set the exit flag to true: */
 			loaded = 1;
-			
-			/* open second (LH) monster trap */
-			Floor_LowerByValue(82,64,64);
 		}
 		else{
 			print(s:"All loaded OK");
@@ -205,11 +189,24 @@ script 5 (void){
 	}
 }
 
+/* SCRIPT 6:
+------------
+open main exit doors */
+script 6 (void){
+	if(doors_open == 0){
+		doors_open = 1;
+		Ceiling_RaiseByValue(65, 8, 112);
+	}
+	else{
+		print(s:"Main doors open already.");
+	}
+}
+
 /* 
 Open bars in balcony secret
-*/
+
 script 7 (void){
 	Floor_LowerByValue(73,8,28);
 	Ceiling_RaiseByValue(73,8,28);
-}
+}*/
 

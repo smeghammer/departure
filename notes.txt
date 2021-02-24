@@ -22,4 +22,9 @@ e1m3 TODO:
 Other TODO:
 make decorate boss combining hellknoght (?) and flamethrower ammo
 
+FAILED SWITCHES:
+ cellar (script 1)
+gallery - not scripts !
+final loading switch (script 4)
+ - grey texture on loaded crate on boat
 
