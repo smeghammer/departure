@@ -47,10 +47,14 @@ script 1 (void){
 	scroll_floor(5,-48,0,2); 
 	Floor_LowerByValue(3,64,64);	//big crates
 	Floor_LowerByValue(5,64,32);	//small crate
-	Door_Open(4,32,0);				//Door
+	Door_Open(4,32,0);		//Door
 	ChangeFloor(3, "STEP1");
 	ChangeFloor(5, "STEP1");
+	// tag, speed, height
 	Floor_LowerByValue(68, 8, 64);
+
+	/* open first monster trap */
+	Ceiling_RaiseByValue(47,32,56);
 }
 
 /* 
@@ -113,7 +117,9 @@ script 3 (void){
 				Door_Open(81, 64);
 				
 				/* open lighthouse monster trap */
+				log(s:"lowering cyberimp lighthouse traps");
 				Floor_LowerByValue(84,64,64);
+				log(s:"lowered cyberimp lighthouse traps");
 			}
 			else{
 				print(s:"On dock already.");
