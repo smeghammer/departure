@@ -31,3 +31,13 @@ map E1M3 "Loading Dock"
 	music="D_E1M3"
 	NoJump
 }
+
+map E1M9 "flamer baron test"
+{
+	levelnum=9
+	sky1 = "SKY1"
+	next="E1M5"
+	secretnext="E1M9"
+	music="D_E1M9"
+	NoJump
+}
