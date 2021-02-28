@@ -1,0 +1,96 @@
+/*
+First attempt at DECORATE hacking!
+A baron that uses flamethrower instead of fireballs...
+
+The melee code comes form the flamerzombie, but the
+projectile used is the baron's green fireball.
+*/
+
+actor FlamerBaron : BaronOfHell 31004
+{
+	MeleeRange 256
+	states
+	{
+		Spawn:
+			BOSS AB 10 A_Look	
+			loop
+		Melee:
+			BOSS E 10 A_FaceTarget
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+
+			BOSS E 10 A_FaceTarget
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+
+			BOSS E 10 A_FaceTarget
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+
+			BOSS E 10 A_FaceTarget
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+		      	BOSS E 1 A_SpawnProjectile("BaronFire",60,20,random(-4,4),0)
+
+			Goto See
+	}
+}
+
+ACTOR BaronFire
+{
+   Radius 2
+   Height 4
+   Speed 12		//16
+   Damage 1
+   PROJECTILE
+   RENDERSTYLE ADD
+   DamageType Fire
+   ALPHA 0.67
+   Scale 0.67
+   SeeSound "weapons/flamer"
+   DeathSound "weapons/scorch"
+   +THRUGHOST
+   States
+   {
+   Spawn:
+      NULL A 2 Bright
+
+      BAL7 A 4 Bright A_Explode(1,8,0)
+      BAL7 A 4 Bright A_Lowgravity
+      BAL7 A 4 Bright A_Explode(1,8,0)
+      BAL7 A 4 Bright A_Explode(1,16,0)
+      BAL7 A 4 Bright A_Explode(1,32,0)
+      BAL7 A 4 Bright A_Explode(1,64,0)
+      stop
+   }
+}
+
+
+

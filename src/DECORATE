@@ -6,4 +6,5 @@
 #include "Actors/RailArachno/DECORATE"
 #include "Actors/DoubleChaingunner/DECORATE"
 #include "Actors/Exterminator/DECORATE"
+#include "Actors/FlamerBaron/DECORATE"
 
