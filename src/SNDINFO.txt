@@ -1,6 +1,7 @@
 //General
 BUZZER							BUZZER
 CONVEYOR						CONVEYOR
+DOORSCRP						DOORSCRP
 
 //BeamZombie
 BeamGuy/Attack					Sounds/BeamZombie/DSBEAMAT

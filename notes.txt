@@ -28,3 +28,13 @@ gallery - not scripts !
 final loading switch (script 4)
  - grey texture on loaded crate on boat
 
+
+e1m3 secret exit - multiple hits on door to open int!
+
+sounds from here:
+https://www.fesliyanstudios.com/royalty-free-sound-effects-download/metal-scraping-94
+
+
+https://doom.fandom.com/wiki/Linedef_type
+
+Also - figure out how to separate scripts by map... (or rename them properly?)
