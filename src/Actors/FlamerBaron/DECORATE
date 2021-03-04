@@ -9,7 +9,7 @@ projectile used is the baron's green fireball.
 actor FlamerBaron : BaronOfHell 31004
 {
 	Obituary "%o was incinerted by a flamethrowing baron."
-	MeleeRange 128
+	MeleeRange 256
 	states
 	{
 		Spawn:
