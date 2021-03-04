@@ -38,3 +38,6 @@ https://www.fesliyanstudios.com/royalty-free-sound-effects-download/metal-scrapi
 https://doom.fandom.com/wiki/Linedef_type
 
 Also - figure out how to separate scripts by map... (or rename them properly?)
+
+
+e1m9 - ACS - kill all superbarons before exit opens

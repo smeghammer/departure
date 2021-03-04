@@ -32,10 +32,10 @@ map E1M3 "Loading Dock"
 	NoJump
 }
 
-map E1M9 "flamer baron test"
+map E1M9 "A Glimpse of Hell..."
 {
 	levelnum=9
-	sky1 = "SKY1"
+	sky1 = "SKY4",0.5
 	next="E1M5"
 	secretnext="E1M9"
 	music="D_E1M9"
