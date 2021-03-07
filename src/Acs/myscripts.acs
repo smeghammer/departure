@@ -238,7 +238,7 @@ script 20 (void){
 	log(s:"All flamer barons killed! Time to go...");
 	//now separate the exit teleporters:
 	//TODO: open exit door
-	
+	Door_Open(21, 12);
 }
 
 

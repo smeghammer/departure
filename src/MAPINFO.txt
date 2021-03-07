@@ -39,5 +39,6 @@ map E1M9 "A Glimpse of Hell..."
 	next="E1M5"
 	secretnext="E1M9"
 	music="D_E1M9"
+	NoInfighting
 	NoJump
 }
