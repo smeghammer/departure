@@ -36,7 +36,7 @@ map E1M9 "A Glimpse of Hell..."
 {
 	levelnum=9
 	sky1 = "SKY4",0.5
-	next="E1M5"
+	next="E1M4"
 	secretnext="E1M9"
 	music="D_E1M9"
 	NoInfighting

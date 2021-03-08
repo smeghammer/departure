@@ -233,8 +233,10 @@ script 7 (void){
 /* scripts for secret level E1M8 */
 script 20 (void){
 	/* loop while still alive */
-	While(ThingCount(31004, 0) > 0)
+	print(i:ThingCount(31004, 0));
+	While(ThingCount(31004, 0) > 0){
 		Delay(35);
+	}
 	log(s:"All flamer barons killed! Time to go...");
 	//now separate the exit teleporters:
 	//TODO: open exit door
